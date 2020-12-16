@@ -1,12 +1,12 @@
  <script>
  <p t="DATEINC">0</p>
- <p t="PROFILENAME">ARGOStest02</p>
- <p t="PROJECTNAME">ARGOStest02</p>
+ <p t="PROFILENAME">ARGOStest01</p>
+ <p t="PROJECTNAME">ARGOStest01</p>
  <p t="SHORTNAME">argos1</p>
  <p t="SITEID">1</p>
  <p t="SITENAME">Maastro</p>
  <p t="SUBJECT">Train</p>
- <p t="TRIALNAME">ARGOStest02</p>
+ <p t="TRIALNAME">ARGOStest01</p>
  <p t="UIDROOT">1.3.6.1.4.1.32722.99.99</p>
  <p t="RUN">1</p>
  <e en="T" t="00001000" n="AffectedSOPInstanceUID">@remove()</e>
