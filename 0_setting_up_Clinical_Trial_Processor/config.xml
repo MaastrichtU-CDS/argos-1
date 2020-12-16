@@ -21,21 +21,21 @@
             name="Roi-RemoveWhitespaces"
             quarantine="quarantines/DicomAnonymizer/DECIDE"
             root="roots/DicomAnonymizer/DECIDE"
-            script="scripts/DECIDE_scripts/dicom-anonymizer-0.script"/>
+            script="scripts/dicom-anonymizer-0.script"/>
         <DicomAnonymizer
             class="org.rsna.ctp.stdstages.DicomAnonymizer"
             lookupTable="scripts/roi-lookup-table.properties"
             name="Roi-Lowercase"
             quarantine="quarantines/DicomAnonymizer/DECIDE"
             root="roots/DicomAnonymizer/DECIDE"
-            script="scripts/DECIDE_scripts/dicom-anonymizer-1.script"/>
+            script="scripts/dicom-anonymizer-1.script"/>
         <DicomAnonymizer
             class="org.rsna.ctp.stdstages.DicomAnonymizer"
-            lookupTable="scripts/DECIDE_scripts/roi-lookup-table.properties"
+            lookupTable="scripts/roi-lookup-table.properties"
             name="Roi-Mapping"
             quarantine="quarantines/DicomAnonymizer/DECIDE"
             root="roots/DicomAnonymizer/DECIDE"
-            script="scripts/DECIDE_scripts/dicom-anonymizer-2.script"/>
+            script="scripts/dicom-anonymizer-2.script"/>
 		<DicomAnonymizer
             class="org.rsna.ctp.stdstages.DicomAnonymizer"
             lookupTable="scripts/ARGOS_deidentification_lookup.properties"
@@ -50,19 +50,6 @@
             quarantine="quarantines/DicomAnonymizerXNAT"
             root="roots/DicomAnonymizerXNAT"
             script="scripts/DicomAnonymizerXnat.script"/>
-<!--		
-		<ExportService
-            name="HTTP Export Service"
-            class="org.rsna.ctp.stdstages.HttpExportService"
-            root="roots/export-service" 
-            url="http://localhost:80"
-			maxUnchunked="1000"
-            acceptDicomObjects="yes"
-            acceptXmlObjects="no"
-            acceptZipObjects="no"
-            acceptFileObjects="no"
-            interval="5000" />
--->
 		<DicomExportService
             name="DicomExportService"
             id="XNAT"
