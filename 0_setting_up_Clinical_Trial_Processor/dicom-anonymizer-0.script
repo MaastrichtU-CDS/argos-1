@@ -1,0 +1,6 @@
+<script>
+ <e en="T" t="30060020" n="StructureSetROISequence">@process()</e>
+ <e en="T" t="30060026" n="ROIName">@contents(this, " ", "_")</e>
+ <e en="T" t="30060080" n="RTROIObservationsSequence">@process()</e>
+ <e en="T" t="30060085" n="ROIObservationLabel">@contents(this, " ", "_")</e>
+</script>

@@ -1,0 +1,95 @@
+<Configuration>
+    <Server
+        maxThreads="20"
+        port="81"/>
+    <Pipeline
+		name="ARGOS ROI Reduce and Deidentification Pipeline - MAASTRO"
+		root="C:/argos/ctp_processing">
+		<DirectoryImportService
+            name="DirectoryImportService"
+            class="org.rsna.ctp.stdstages.DirectoryImportService"
+            root="roots/DirectoryImportService"
+            import="C:/argos/ctp_processing/ctp_import"
+            acceptDicomObjects="yes"
+            acceptXmlObjects="no"
+            acceptZipObjects="no"
+            acceptFileObjects="no" 
+			quarantine="quarantines/DirectoryImportService"/>
+        <DicomAnonymizer
+            class="org.rsna.ctp.stdstages.DicomAnonymizer"
+            lookupTable="scripts/roi-lookup-table.properties"
+            name="Roi-RemoveWhitespaces"
+            quarantine="quarantines/DicomAnonymizer/DECIDE"
+            root="roots/DicomAnonymizer/DECIDE"
+            script="scripts/DECIDE_scripts/dicom-anonymizer-0.script"/>
+        <DicomAnonymizer
+            class="org.rsna.ctp.stdstages.DicomAnonymizer"
+            lookupTable="scripts/roi-lookup-table.properties"
+            name="Roi-Lowercase"
+            quarantine="quarantines/DicomAnonymizer/DECIDE"
+            root="roots/DicomAnonymizer/DECIDE"
+            script="scripts/DECIDE_scripts/dicom-anonymizer-1.script"/>
+        <DicomAnonymizer
+            class="org.rsna.ctp.stdstages.DicomAnonymizer"
+            lookupTable="scripts/DECIDE_scripts/roi-lookup-table.properties"
+            name="Roi-Mapping"
+            quarantine="quarantines/DicomAnonymizer/DECIDE"
+            root="roots/DicomAnonymizer/DECIDE"
+            script="scripts/DECIDE_scripts/dicom-anonymizer-2.script"/>
+		<DicomAnonymizer
+            class="org.rsna.ctp.stdstages.DicomAnonymizer"
+            lookupTable="scripts/ARGOS_deidentification_lookup.properties"
+            name="DicomAnonymizer"
+            quarantine="quarantines/DicomAnonymizer"
+            root="roots/DicomAnonymizer"
+            script="scripts/ARGOS Pipeline - MAASTRO.script"/>
+		<DicomAnonymizerXNAT
+            class="org.rsna.ctp.stdstages.DicomAnonymizer"
+			lookupTable="scripts/ARGOS_deidentification_lookup.properties"
+            name="DicomAnonymizerXNAT"
+            quarantine="quarantines/DicomAnonymizerXNAT"
+            root="roots/DicomAnonymizerXNAT"
+            script="scripts/DicomAnonymizerXnat.script"/>
+<!--		
+		<ExportService
+            name="HTTP Export Service"
+            class="org.rsna.ctp.stdstages.HttpExportService"
+            root="roots/export-service" 
+            url="http://localhost:80"
+			maxUnchunked="1000"
+            acceptDicomObjects="yes"
+            acceptXmlObjects="no"
+            acceptZipObjects="no"
+            acceptFileObjects="no"
+            interval="5000" />
+-->
+		<DicomExportService
+            name="DicomExportService"
+            id="XNAT"
+            class="org.rsna.ctp.stdstages.DicomExportService"
+            root="roots/DicomExportService" 
+            quarantine="quarantines/DicomExportService"
+            auditLogID=""
+            auditLogTags=""
+            url="dicom://XNAT:CTP@localhost:8104"
+            associationTimeout="no"
+            forceClose="0"
+            hostTag="00097774" 
+            portTag="00097776" 
+            calledAETTag="00097770" 
+            callingAETTag="00097772"
+            throttle="0"
+            interval="5000" />
+        <DirectoryStorageService
+            acceptDuplicates="yes"
+            class="org.rsna.ctp.stdstages.DirectoryStorageService"
+            defaultString="UNKNOWN"
+            logDuplicates="no"
+            name="DirectoryStorageService"
+            quarantine="quarantines/DirectoryStorageService"
+            root="C:/argos/ctp_processing/ctp_roi_renamed"
+            setStandardExtensions="yes"
+            structure="(0010,0020)"
+            whitespaceReplacement="_"/>
+    </Pipeline>
+</Configuration>
