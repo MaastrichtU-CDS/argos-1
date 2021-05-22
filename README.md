@@ -33,7 +33,7 @@ Screenshot
 
 Screenshot
 
-#### Option 1 : Python batch uploading script
+#### Option 1 : Direct upload with python batch script
 
 #### Option 2 : Clinical Trial Processor pipeline ending with DICOM SEND
 
