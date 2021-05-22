@@ -7,7 +7,7 @@ Step 1 : Ensure that you have sufficient space, memory and reasonably up to date
 
 Step 2 : Install Docker Engine (free Community Edition version). Follow the instructions here - https://docs.docker.com/engine/install/ubuntu/
 
-Step 3 : After validating that Docker is working (e.g. do the hello-world demo recommended at the end of the install documentation) please also install docker-compose with the command line `sudo apt-get install docker-compose`.
+Step 3 : After validating that Docker is working (e.g. do the hello-world demo recommended at the end of the install documentation) please also install docker-compose (https://docs.docker.com/compose/install/).
 
 Step 4 : Install the git library with `sudo apt-get install git`.
 
