@@ -1,8 +1,16 @@
 # ARGOS
+## ARtificial Intelligence for Gross tumour vOlume Segmentation
 
-##ARtificial Intelligence for Gross tumour vOlume Segmentation
+### Setting up an ARGOS node for your clinic
 
-###Access to machine where the deep learning will run locally
+Step 1 : Ensure that you have sufficient space, memory and reasonably up to date hardware including ***at least 1 GPU chip***. For reference, the MAASTRO node is an Amazon AWS Ubuntu Linux 18.04 virtual machine with 10GBit network and 50GB storage (it happens to be the g3.xlarge template instance).
+
+Step 2 : Install Docker Engine (free Community Edition version). Follow the instructions here - https://docs.docker.com/engine/install/ubuntu/
+
+Step 3 : After validating that Docker is working (e.g. do the hello-world demo recommended at the end of the install documentation) please also install docker-compose with the command line - sudo apt-get install docker-compose.
+
+
+### Access to machine where the deep learning will run locally
 In this study, you will need a local machine where you can hold images until needed, and have the following hardware requirements.
 These requirements are also stated in Section 4.1 of the study protocol.
 <br>
