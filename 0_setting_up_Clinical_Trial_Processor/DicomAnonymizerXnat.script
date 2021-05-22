@@ -1,8 +1,0 @@
-<script>
- <p t="SHORTNAME">ARGOStest01</p>
- <e en="T" t="00100010" n="PatientName">@keep()</e>
- <e en="T" t="00100020" n="PatientID">@keep()</e>
- <e en="T" t="00104000" n="PatientComments">@always()Project: @param(@SHORTNAME); Subject: @contents(PatientName); Session: @contents(PatientID)_@contents(StudyDate)_@contents(StudyDescription, "[^0-9a-zA-Z]+", "_")</e>
- <e en="T" t="00131010" n="ProjectName">@keep()</e>
- <e en="T" t="00081030" n="StudyDescription">@keep()</e>
-</script>
