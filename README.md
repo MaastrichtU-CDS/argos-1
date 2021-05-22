@@ -13,15 +13,17 @@ Step 4 : Install the git library with `sudo apt-get install git`.
 
 Step 5 : Find the XNAT docker-compose registry by the Washington University Neuro-imaging Research Group, and follow the instructions to clone their repository to your system, starting with the `git clone https://github.com/NrgXnat/xnat-docker-compose`.
 
-Step 6 : Create an XNAT instance by switching directory into the xnat-docker-compose master folder `cd xnat-docker-compose` and then run spin up the required XNAT components using docker-compose as follows `sudo docker-compose up -d`.
+Step 6 : Create an XNAT instance by switching directory into the xnat-docker-compose master folder `cd xnat-docker-compose` and then copy the default environment template to the .env file as `sudo cp default.env .env`.
 
-Step 7 : Depending on your system Step 6 could well take a few minutes to get set up. You can check status using the following command `docker stats`. Once all three docker images in the XNAT package are stable at very low load, it probably means everything is up and running nice in the background.
+Step 7 : Spin up the required XNAT components using docker-compose as follows `sudo docker-compose up -d`.
+
+Step 8 : Depending on your system Step 7 could well take a few minutes to get set up. You can check status using the following command `sudo docker stats`. Once all three docker images in the XNAT package are stable at very low load, it probably means everything is up and running nice in the background.
 
 Step 8 : On the same machine that is hosting your XNAT docker instance, you now need to point a web browser to http://localhost:80. The XNAT welcome screen should come up momentarily.
 
 ### B : Populating the XNAT dicom collection point with your clinical data
 
-Step 1 : On the XNAT welcome screen, you will log in as admin and the password is admin.
+Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password is _admin_.
 
 Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
 
