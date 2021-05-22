@@ -21,7 +21,24 @@ Step 8 : On the same machine that is hosting your XNAT docker instance, you now 
 
 ### B : Populating the XNAT dicom collection point with your clinical data
 
+Step 1 : On the XNAT welcome screen, you will log in as admin and the password is admin.
 
+Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
+
+Screenshot
+
+Step 3 : There are now several options to populate the XNAT collection with your DICOM CT and DICOM RTSTRUCT. We will provide you some of the options below. The important thing is to end up here with DICOM CT cleaned and properly de-identified, with RTSTRUCT attached such that the ***primary lung tumour has been labelled as GTV-1***.
+
+Screenshot
+
+Screenshot
+
+#### Option 1 : Python batch uploading script
+
+#### Option 2 : Clinical Trial Processor pipeline ending with DICOM SEND
+
+
+#### Option 3 : Clinical Trial Processor pipeline ending with HTTPS SEND
 
 
 
