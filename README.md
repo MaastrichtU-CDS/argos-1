@@ -1,4 +1,4 @@
-# ARtificial Intelligence for Gross tumour vOlume Segmentation (ARGOS) Standard Procedures
+# ARtificial Intelligence for Gross tumour vOlume Segmentation (ARGOS)
 
 ## ARGOS Standard Procedures
 
