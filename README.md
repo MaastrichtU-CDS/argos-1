@@ -35,7 +35,7 @@ Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password
 ![](./screenshots/xnat_splash_admin.jpg)
 
 Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
-![](./screenshots/xnat-new-projecr.jpg)
+![](./screenshots/xnat-new-projecr.png)
 
 Step 3 : There are now several options to populate the XNAT collection with your DICOM CT and DICOM RTSTRUCT (for most partners) or DICOM SEGMENTATION (for the minority of partners). We will provide you some of the data transfer options below.
 
@@ -50,7 +50,7 @@ _This is probably the most useful clinical-integrated workflow_. Here, we need t
 ##### Option 3 : Clinical Trial Processor pipeline ending with HTTPS transfer
 _This is probably one of the options for partners that want to move clinical data to a university department that hosts the ARGOD node_. This will be again done with Clinical Trial Processor and works the same as Option 2 above, except we will send via HTTPS protocol. There needs to be some additional setting up on the XNAT receiving side, but we will have someone from Medical Data Works give you some guidance for this part.
 
-![](./screenshots/xnat-dicom-ct-seg.jpg)
+![](./screenshots/xnat-dicom-ct-seg.png)
 
 Step 4 : (in progress)
 </details>
