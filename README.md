@@ -27,7 +27,7 @@ Step 9 : On the same machine that is hosting your XNAT docker instance, you now 
 </details>
 
 ### B : Populating the XNAT dicom collection point with your clinical data
-_The objective of this part is to get a populate your XNAT docker instance with de-identified DICOM data, the end point desired will be DICOM CT and DICOM SEGMENTATION file for each patient, with the primary lung GTV identified as such_
+_The objective of this part is to get a populate your XNAT docker instance with de-identified DICOM data, the end point desired will be DICOM CT and DICOM SEGMENTATION file for each patient, with the primary lung GTV attached with the SNOMED CT attribute 86049000 (i.e. "Neoplasm, Primary)_
 
 <details><summary>Expand step-by-step instructions :</summary>
 
