@@ -64,9 +64,8 @@ Step 4 : (in progress)
 
 </details>
 
-##### Access to machine where the deep learning will run locally
-In this study, you will need a local machine where you can hold images until needed, and have the following hardware requirements.
-These requirements are also stated in Section 4.1 of the study protocol.
+### C : Access to machine where the deep learning will run locally
+You will need a deep learning machine where you can hold images until needed for the training run, and have the following hardware requirements. These requirements are also stated in Section 4.1 of the study protocol.
 <br>
 - We strongly recommend ***Ubuntu 18.04 LTS*** operating system
 - ***Python version 3.7 or higher***
