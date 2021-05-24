@@ -1,7 +1,9 @@
-# ARGOS
+# ARGOS Standard Procedures
+
 ## ARtificial Intelligence for Gross tumour vOlume Segmentation
 
 ### A : Setting up an ARGOS XNAT dicom collection for your clinic
+_The objective of this part is to get a working XNAT docker instance set up locally on your clinic side, and prepare it to receive DICOM data_
 
 Step 1 : Ensure that you have sufficient space, memory and reasonably up to date hardware including ***at least 1 GPU chip***. For reference, the MAASTRO node is an Amazon AWS Ubuntu Linux 18.04 virtual machine with 10GBit network and 100GB storage (it happens to be the g3.xlarge template instance).
 
@@ -22,6 +24,7 @@ Step 8 : Depending on your system Step 7 could well take a few minutes to get se
 Step 8 : On the same machine that is hosting your XNAT docker instance, you now need to point a web browser to http://localhost:80. The XNAT welcome screen should come up momentarily.
 
 ### B : Populating the XNAT dicom collection point with your clinical data
+_The objective of this part is to get a populate your XNAT docker instance with de-identified DICOM data, the end point desired will be DICOM CT and DICOM SEGMENTATION file for each patient, with the primary lung GTV identified as such_
 
 Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password is _admin_.
 
