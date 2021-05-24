@@ -41,7 +41,7 @@ Screenshot
 Screenshot
 
 ##### Option 1 : Direct upload with python batching script
-_This can only work with adequately de-identified and cleaned DICOM data_. We provide you a python script that will iterate through every patient folder in a local filesystem directory, it will package each patient folder as a zip object, and then transmit the zip via API into your local XNAT docker instance which will collect it and file it.
+_This can only work with adequately de-identified and correctly-cleaned DICOM data_. We provide you a python notebook script to iterate through every patient folder in a local filesystem directory, it will package each patient folder as a zip object, and then transmit the zip via API into your local XNAT docker instance which will collect it and try to archive it.
 
 ##### Option 2 : Clinical Trial Processor pipeline ending with DICOM SEND
 _This is probably the most useful clinical-integrated workflow_. Here, we need to set you up with Clinical Trial Processor workflow that will (i) consume a copy of your DICOM files exported from your planning system or PACS (b) it will de-identify (using a key file) and change the GTV names (again using a lookup file) into the standard required above (c) it will send it across via standard DICOM protocol across the network to try to reach port number 8104 on your XNAT machine.
