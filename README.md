@@ -61,7 +61,7 @@ These requirements are also stated in Section 4.1 of the study protocol.
 <br>
 - We strongly recommend ***Ubuntu 18.04 LTS*** operating system
 - ***Python version 3.7 or higher***
-- ***Docker Desktop** community edition (free)
+- ***Docker Desktop*** community edition (free)
 - ***At least 1 GPU with the most up to date drivers; we plan to use TensorFlow v2.4 so we need updated GPU drivers***
 - ***At least 16GB of RAM***
 - Approximately ***50GB of disk space***
