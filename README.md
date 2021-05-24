@@ -46,9 +46,16 @@ _This can only work with adequately de-identified and correctly-cleaned DICOM da
 
 ##### Option 2 : Clinical Trial Processor pipeline ending with DICOM transfer
 _This is probably the most useful clinical-integrated workflow_. Here, we need to set you up with Clinical Trial Processor workflow that will (i) consume a copy of your DICOM files exported from your planning system or PACS (b) it will de-identify (using a key file) and change the GTV names (again using a lookup file) into the standard required above (c) it will send it across via standard DICOM protocol across the network to try to reach port number 8104 on your XNAT machine.
+  * Download and install Java JRE/JDK _version 8_ (no higher than 8 please)
+  * Download and install CTP as per the guidance here : https://mircwiki.rsna.org/index.php?title=MIRC_CTP
+  * Extract the contents of the zip package called 'ctp_config_dicom' and replace the files in your CTP directory if needed.
 
 ##### Option 3 : Clinical Trial Processor pipeline ending with HTTPS transfer
 _This is probably one of the options for partners that want to move clinical data to a university department that hosts the ARGOD node_. This will be again done with Clinical Trial Processor and works the same as Option 2 above, except we will send via HTTPS protocol. There needs to be some additional setting up on the XNAT receiving side, but we will have someone from Medical Data Works give you some guidance for this part.
+  * Download and install Java JRE/JDK _version 8_ (no higher than 8 please)
+  * Download and install CTP as per the guidance here : https://mircwiki.rsna.org/index.php?title=MIRC_CTP
+  * Extract the contents of the zip package called 'ctp_config_https' and replace the files in your CTP directory if needed.
+
 
 ![](./screenshots/xnat-dicom-ct-seg.png)
 
