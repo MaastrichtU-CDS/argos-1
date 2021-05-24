@@ -32,11 +32,9 @@ _The objective of this part is to get a populate your XNAT docker instance with 
 <details><summary>Expand step-by-step instructions :</summary>
 
 Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password is _admin_.
-
 ![](./screenshots/xnat_splash_admin.jpg)
 
 Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
-
 ![](./screenshots/xnat-new-projecr.jpg)
 
 Step 3 : There are now several options to populate the XNAT collection with your DICOM CT and DICOM RTSTRUCT (for most partners) or DICOM SEGMENTATION (for the minority of partners). We will provide you some of the data transfer options below.
