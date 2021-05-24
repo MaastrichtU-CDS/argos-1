@@ -59,7 +59,7 @@ _This is probably one of the options for partners that want to move clinical dat
   * Please follow the README notes in this zip package to set up your de-identification and GTV renaming correctly.
 
 
-Step 4 : (in progress)
+Step 4 : Test a dummy patient first, to make sure the transfer into XNAT is going as expected. Try downloading what you have just sent back from XNAT and check if it compares well to the original except (for patient de-identification and GTV renaming). An example of one of my patients is in the screenshot below, you see this one has multiple CT slices and one single SEG (or RTSTRUCT if this is your case) assigned to this patient.
 ![](./screenshots/xnat-dicom-ct-seg.png)
 
 </details>
