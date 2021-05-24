@@ -29,6 +29,8 @@ Step 9 : On the same machine that is hosting your XNAT docker instance, you now 
 ### B : Populating the XNAT dicom collection point with your clinical data
 _The objective of this part is to get a populate your XNAT docker instance with de-identified DICOM data, the end point desired will be DICOM CT and DICOM SEGMENTATION file for each patient, with the primary lung GTV identified as such_
 
+<details><summary>Expand step-by-step instructions :</summary>
+
 Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password is _admin_.
 
 ![](./screenshots/xnat_splash_admin.jpg)
@@ -53,7 +55,7 @@ _This is probably one of the options for partners that want to move clinical dat
 ![](./screenshots/xnat-dicom-ct-seg.jpg)
 
 Step 4 : (in progress)
-
+</details>
 
 ##### Access to machine where the deep learning will run locally
 In this study, you will need a local machine where you can hold images until needed, and have the following hardware requirements.
