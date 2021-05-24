@@ -5,7 +5,8 @@
 ### A : Setting up an ARGOS XNAT dicom collection for your clinic
 _The objective of this part is to get a working XNAT docker instance set up locally on your clinic side, and prepare it to receive DICOM data_
 
-<details><summary>Expand step-by-step instructions</summary>
+<details><summary>Expand step-by-step instructions :</summary>
+
 Step 1 : Ensure that you have sufficient space, memory and reasonably up to date hardware including ***at least 1 GPU chip***. For reference, the MAASTRO node is an Amazon AWS Ubuntu Linux 18.04 virtual machine with 10GBit network and 100GB storage (it happens to be the g3.xlarge template instance).
 
 Step 2 : Install Docker Engine (free Community Edition version). Follow the instructions here - https://docs.docker.com/engine/install/ubuntu/
@@ -29,6 +30,8 @@ Step 9 : On the same machine that is hosting your XNAT docker instance, you now 
 _The objective of this part is to get a populate your XNAT docker instance with de-identified DICOM data, the end point desired will be DICOM CT and DICOM SEGMENTATION file for each patient, with the primary lung GTV identified as such_
 
 Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password is _admin_.
+
+![](./screenshots/xnat_splash_admin.jpg)
 
 Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
 
