@@ -35,15 +35,11 @@ Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password
 
 Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
 
-Screenshot
+![](./screenshots/xnat-new-projecr.jpg)
 
 Step 3 : There are now several options to populate the XNAT collection with your DICOM CT and DICOM RTSTRUCT (for most partners) or DICOM SEGMENTATION (for the minority of partners). We will provide you some of the data transfer options below.
 
 **Note well : If using RTSTRUCT, please have primary lung tumour(s) named as 'GTV-1' (GTV-2, etc. if more than one primary in the lung). Malignant nodes are named as 'GTV-N1' ('GTV-N2', etc. if more than one node) or simply 'GTV-Nsum'. Organs at risk such as 'Esophagus', 'Heart', 'Lung-Left', 'Lung-Right', are all purely optional.**
-
-Screenshot
-
-Screenshot
 
 ##### Option 1 : Direct upload with python batching script
 _This can only work with adequately de-identified and correctly-cleaned DICOM data_. We provide you with a python notebook script to iterate through every patient folder in a local filesystem directory, it will package each patient folder as a zip object, and then transmit the zip via API into your local XNAT docker instance which will collect it and try to archive it. This requires Python version 3.7 or later.
@@ -53,6 +49,8 @@ _This is probably the most useful clinical-integrated workflow_. Here, we need t
 
 ##### Option 3 : Clinical Trial Processor pipeline ending with HTTPS transfer
 _This is probably one of the options for partners that want to move clinical data to a university department that hosts the ARGOD node_. This will be again done with Clinical Trial Processor and works the same as Option 2 above, except we will send via HTTPS protocol. There needs to be some additional setting up on the XNAT receiving side, but we will have someone from Medical Data Works give you some guidance for this part.
+
+![](./screenshots/xnat-dicom-ct-seg.jpg)
 
 Step 4 : (in progress)
 
