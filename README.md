@@ -64,11 +64,12 @@ Step 4 : First try a testrun with a dummy case (eg delineated RANDO phantom, or 
 
 Step 5: Instructions for converting RTSTRUCT to SEGMENTATION following shortly .....
 
-</details>
+
 
 ### C : Access to machine where the deep learning will run locally
 You will need a deep learning machine where you can hold images until needed for the training run, and have the following hardware requirements. These requirements are also stated in Section 4.1 of the study protocol.
 <br>
+<details><summary>Expand step-by-step instructions :</summary>
 - We strongly recommend ***Ubuntu 18.04 LTS*** operating system
 - ***Python version 3.7 or higher***
 - ***Docker Desktop*** community edition (free)
@@ -77,5 +78,6 @@ You will need a deep learning machine where you can hold images until needed for
 - At least ***50GB of disk space but more space will be much better*** (50GB corresponds very roughly to 100 patients with 1 Lung CT study and 1 RTSTRUCT file each)
 - The clinic researcher needs to have local admin rights on this deep learning machine
 - Local IP address and port for HTTPS (we will tell you which port number to enable)
+</details>
 
 
