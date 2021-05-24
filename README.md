@@ -72,7 +72,7 @@ You will need a deep learning machine where you can hold images until needed for
 - ***Docker Desktop*** community edition (free)
 - ***At least 1 GPU with the most up to date drivers; we plan to use TensorFlow v2.4 so we need updated GPU drivers***
 - ***At least 16GB of RAM***
-- Approximately ***50GB of disk space***
+- At least ***50GB of disk space but more space will be much better*** (50GB corresponds very roughly to 100 patients with 1 Lung CT study and 1 RTSTRUCT file each)
 - The clinic researcher needs to have local admin rights on this deep learning machine
 - Local IP address and port for HTTPS (we will tell you which port number to enable)
 
