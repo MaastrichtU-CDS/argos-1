@@ -40,16 +40,16 @@ Screenshot
 
 Screenshot
 
-#### Option 1 : Direct upload with python batching script
+##### Option 1 : Direct upload with python batching script
 _This can only work with adequately de-identified and cleaned DICOM data_. We provide you a python script that will iterate through every patient folder in a local filesystem directory, it will package each patient folder as a zip object, and then transmit the zip via API into your local XNAT docker instance which will collect it and file it.
 
-#### Option 2 : Clinical Trial Processor pipeline ending with DICOM SEND
+##### Option 2 : Clinical Trial Processor pipeline ending with DICOM SEND
 _This is probably the most useful clinical-integrated workflow_. Here, we need to set you up with Clinical Trial Processor workflow that will (i) consume a copy of your DICOM files exported from your planning system or PACS (b) it will de-identify (using a key file) and change the GTV names (again using a lookup file) into the standard required above (c) it will send it across via standard DICOM protocol across the network to try to reach port number 8104 on your XNAT machine.
 
-#### Option 3 : Clinical Trial Processor pipeline ending with HTTPS SEND
+##### Option 3 : Clinical Trial Processor pipeline ending with HTTPS SEND
 _This is probably one of the options for partners that want to move clinical data to a university department that hosts the ARGOD node_. This will be again done with Clinical Trial Processor and works the same as Option 2 above, except we will send via HTTPS protocol. There needs to be some additional setting up on the XNAT receiving side, but we will have someone from Medical Data Works give you some guidance for this part.
 
-
+Step 4 : (in progress)
 
 
 ### Access to machine where the deep learning will run locally
