@@ -58,26 +58,25 @@ _This is probably one of the options for partners that want to move clinical dat
   * Extract the contents of the zip package called 'ctp_config_https' and replace the files in your CTP directory if needed.
   * Please follow the README notes in this zip package to set up your de-identification and GTV renaming correctly.
 
-
 Step 4 : First try a testrun with a dummy case (eg delineated RANDO phantom, or use one of our public access cases from The Cancer Imaging Archive). This is to make sure the transfer into XNAT is going as expected. Try downloading this dummy case back from XNAT and open it with your Dicom tools; check if it compares well to the original (must be same other than patient de-identification and GTV renaming). An example of one of my cases in XNAT is in the screenshot below, you see this one has multiple CT slices and one single SEG (or RTSTRUCT if this is your case) assigned to this patient.
 ![](./screenshots/xnat-dicom-ct-seg.png)
 
 Step 5: Instructions for converting RTSTRUCT to SEGMENTATION following shortly .....
-
+</details>
 
 
 ### C : Access to machine where the deep learning will run locally
 You will need a deep learning machine where you can hold images until needed for the training run, and have the following hardware requirements. These requirements are also stated in Section 4.1 of the study protocol.
 <br>
 <details><summary>Expand step-by-step instructions :</summary>
-- We strongly recommend ***Ubuntu 18.04 LTS*** operating system
-- ***Python version 3.7 or higher***
-- ***Docker Desktop*** community edition (free)
-- ***At least 1 GPU with the most up to date drivers; we plan to use TensorFlow v2.4 so we need updated GPU drivers***
-- ***At least 16GB of RAM***
-- At least ***50GB of disk space but more space will be much better*** (50GB corresponds very roughly to 100 patients with 1 Lung CT study and 1 RTSTRUCT file each)
-- The clinic researcher needs to have local admin rights on this deep learning machine
-- Local IP address and port for HTTPS (we will tell you which port number to enable)
+  * We strongly recommend ***Ubuntu 18.04 LTS*** operating system
+  * ***Python version 3.7 or higher***
+  * ***Docker Desktop*** community edition (free)
+  * ***At least 1 GPU with the most up to date drivers; we plan to use TensorFlow v2.4 so we need updated GPU drivers***
+  * ***At least 16GB of RAM***
+  * At least ***50GB of disk space but more space will be much better*** (50GB corresponds very roughly to 100 patients with 1 Lung CT study and 1 RTSTRUCT file each)
+  * The clinic researcher needs to have local admin rights on this deep learning machine
+  * Local IP address and port for HTTPS (we will tell you which port number to enable)
 </details>
 
 
