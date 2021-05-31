@@ -1,6 +1,6 @@
 # ARtificial Intelligence for Gross tumour vOlume Segmentation (ARGOS)
 
-## ARGOS Standard Procedures
+## ARGOS Standard Procedures (growing document - works in progress)
 
 ### A : Setting up an ARGOS XNAT dicom collection for your clinic
 _The objective of this part is to get a working XNAT docker instance set up locally on your clinic side, and prepare it to receive DICOM data_
