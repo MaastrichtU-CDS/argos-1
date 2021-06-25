@@ -10,7 +10,7 @@ import os
 #import re
 import shutil
 
-homeFolder = '//smb.isilon01.ad.maastro.nl/research/Projects/P0363 - Survival Esophageal Cancer/decompress2'
+homeFolder = 'C:/somewhere' #CHANGE THIS PATH!
 #backupFolder = 'C:/decompress2'
 
 listOfFiles = [os.path.join(dp, f) for dp, dn, filenames in os.walk(homeFolder) for f in filenames if not f.startswith('.')]
