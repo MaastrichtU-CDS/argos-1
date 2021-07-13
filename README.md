@@ -52,13 +52,14 @@ _This is probably the most useful clinical-integrated workflow_. Here, we need t
   * Please follow the README notes in this zip package to set up your de-identification and GTV renaming correctly.
 
 ##### Option 3 : Clinical Trial Processor pipeline ending with HTTPS transfer
-_This is probably one of the options for partners that want to move clinical data to a university department that hosts the ARGOD node_. This will be again done with Clinical Trial Processor and works the same as Option 2 above, except we will send via HTTPS protocol. There needs to be some additional setting up on the XNAT receiving side, but we will have someone from Medical Data Works give you some guidance for this part.
+_This is probably one of the options for partners that want to move clinical data to a university department that hosts the ARGOS node_. This will be again done with Clinical Trial Processor and works in similar fashion as Option 2 above, except we will need an EXTRA CTP instance on the RECEIVING SIDE to pick up data via http/http and forward it sideways to XNAT.
   * Download and install Java JRE/JDK _version 8_ (no higher than 8 please)
   * Download and install CTP as per the guidance here : https://mircwiki.rsna.org/index.php?title=MIRC_CTP
-  * Extract the contents of the zip package called 'ctp_config_https' and replace the files in your CTP directory if needed.
-  * Please follow the README notes in this zip package to set up your de-identification and GTV renaming correctly.
+  * Note you will need CTP installed on the SENDER SIDE, and also a CTP installed on the RECEIVER SIDE.
+  * For the sender : Extract the contents of the zip package called 'ctp_config_http_SENDER' and replace the files in your CTP directory if needed. Please follow the README notes in this zip package to set up your de-identification and GTV renaming correctly.
+  * For the receiver : Extract the contents of the zip package called 'ctp_config_http_RECEIVER', then follow the README notes in this zip package to set up your receiver and forward the data into XNAT.
 
-Step 4 : First try a testrun with a dummy case (eg delineated RANDO phantom, or use one of our public access cases from The Cancer Imaging Archive). This is to make sure the transfer into XNAT is going as expected. Try downloading this dummy case back from XNAT and open it with your Dicom tools; check if it compares well to the original (must be same other than patient de-identification and GTV renaming). An example of one of my cases in XNAT is in the screenshot below, you see this one has multiple CT slices and one single SEG (or RTSTRUCT if this is your case) assigned to this patient.
+Step 4 : First try a testrun with a dummy case (eg delineated RANDO phantom, or use one of our public access cases from The Cancer Imaging Archive) e.g. LUNG-001 included in this repository. This is to make sure the transfer into XNAT is going as expected. Try downloading this dummy case back from XNAT and open it with your Dicom tools; check if it compares well to the original (must be same other than patient de-identification and GTV renaming). An example of one of my cases in XNAT is in the screenshot below, you see this one has multiple CT slices and one single SEG (or RTSTRUCT if this is your case) assigned to this patient.
 ![](./screenshots/xnat-dicom-ct-seg.png)
 
 Step 5: Instructions for converting RTSTRUCT to SEGMENTATION following shortly .....
