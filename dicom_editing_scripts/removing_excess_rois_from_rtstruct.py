@@ -12,18 +12,6 @@ import os
 #from decimal import Decimal
 import re
  
-#flatten files to patient level
-#import shutil
-#import os
-# 
-#folderPath = 'C:/Maaike_SECATEUR/ready03'
-#listOfFolders = os.listdir(folderPath)
-#for destination in listOfFolders:
-#    pd = os.path.join(folderPath,destination)
-#    listOfFiles = [os.path.join(dp,f) for dp, dn, filenames in os.walk(pd) for f in filenames]
-#    for i in listOfFiles:
-#        shutil.move(i, pd)
-        
  
 """
 # use this code CAUTIOUSLY as it will help you delete unwanted structures
