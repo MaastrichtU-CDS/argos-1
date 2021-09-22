@@ -87,14 +87,40 @@ When you have your GPU machine ready, please reach out to Leonard ASAP and try t
 ### D : Installing the VANTAGE node client for federated learning
 For more detailed understanding of the Vantage6 infrastructure please refer to their documentation located [here](https://vantage6.ai/). This section provides instructions for installing the pre-requisites and setting up the infrastructure on your local machine.
 
-##### Install Python Virtual environment 
-Installing a python virtual environment is highly recommended (but not mandatory). You may use the commands below in your Python command line console to install, create and then activate a virtual enviroment named "vantage6" (you are welcome to name it anything you wish e.g. "argos01" etc. etc.)
+Important note : You must set up the node client for federated learning on your UBUNTU GPU machine.
 
+<details><summary>Expand step-by-step instructions :</summary>
+
+Step 1 : Confirm that you have Python 3.6 or higher (this almost always ships with the Ubuntu operating system). Upgrade if necessary.
+
+Step 2 : Confirm that you have Docker Community Edition (i.e. the free for research/education version), and if not yet, check the appropriate instructions [here](https://docs.docker.com/engine/install/ubuntu/).
+
+Step 3 : A python virtual environment is strongly recommended. You may use the commands below in your Ubuntu command line console to install, create and then activate a virtual enviroment named "vantage6" (you are welcome to name it anything you wish e.g. "argos01" etc. etc.)
  ```
     sudo apt install python3-venv
     python3 -m venv vantage6
     source vantage6/bin/activate
 ``` 
 
+Step 4 : Install python pip3 and check the version. You may use the commands below in your Ubuntu command line console.
+```
+sudo apt update
+sudo apt install python3-pip
+pip3 --version
+```
 
+Step 5 : Node Client Installation; the Vantage6 infrastructure has been modified slightly to accomodate ARGOS and will be installed within the python virtual enviroment you created in step 3 above.
+``` 
+git clone https://gitlab.com/UM-CDS/argos-infrastructure.git
+cat argos-infrastructure/requirements.txt | xargs -n 1 -L 1 pip3 install
+```
+
+Note : Just in case you might encoubter an error as shown in the screenshot below, type the following command to resolve.
+```
+pip3 install --upgrade setuptools
+```
+![](./screenshots/setuptools.JPG)
+
+Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact Leonard ASAP to complete this step.
+</details>
 
