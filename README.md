@@ -115,10 +115,7 @@ git clone https://gitlab.com/UM-CDS/argos-infrastructure.git
 cat argos-infrastructure/requirements.txt | xargs -n 1 -L 1 pip3 install
 ```
 
-Note : Just in case you might encoubter an error as shown in the screenshot below, type the following command to resolve.
-```
-pip3 install --upgrade setuptools #needed only if you encouter the error shown in the screenshot below
-```
+Note : Just in case you might encounter an error such as shown in the screenshot below, type the following command to resolve it ```pip3 install --upgrade setuptools ```
 ![](./screenshots/setuptools.JPG)
 
 Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact Leonard ASAP to complete this step.
