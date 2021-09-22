@@ -109,11 +109,12 @@ sudo apt install python3-pip
 pip3 --version
 ```
 
-Step 5 : Node Client Installation; the Vantage6 infrastructure has been modified slightly to accomodate ARGOS and will be installed within the python virtual enviroment you created in step 3 above.
+Step 5 : Node Client Installation; the Vantage6 infrastructure has been modified slightly to accomodate ARGOS and will be installed within the python virtual enviroment you created in step 3 above. You may download only the file in this repository called "vantage6-requirements.txt" or git clone the entire contents to your python virtual environment. The command (assuming you wish to clone the whole git) is :
 ``` 
 git clone https://gitlab.com/UM-CDS/argos-1.git
 cat argos-1/vantage6-requirements.txt | xargs -n 1 -L 1 pip3 install
 ```
+Note : If you only wish to download the vantage6-requirements.txt file, then you need to change the path in front of the "cat" command above to wherever you decide to save the vantage6-requirements.txt.
 
 Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact Leonard ASAP to complete this step.
 </details>
