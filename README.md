@@ -114,7 +114,7 @@ Step 5 : Node Client Installation; the Vantage6 infrastructure has been modified
 git clone https://gitlab.com/UM-CDS/argos-1.git
 cat argos-1/vantage6-requirements.txt | xargs -n 1 -L 1 pip3 install
 ```
-Note : If you only wish to download the vantage6-requirements.txt file, then you need to change the path in front of the "cat" command above to wherever you decide to save the vantage6-requirements.txt.
+Please note : If you wish to download only the vantage6-requirements.txt file, then you have to change the path immediately in front of the "cat" command above to where you had saved the vantage6-requirements.txt file.
 
 Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact Leonard ASAP to complete this step.
 </details>
