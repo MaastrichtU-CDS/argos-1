@@ -117,7 +117,7 @@ cat argos-infrastructure/requirements.txt | xargs -n 1 -L 1 pip3 install
 
 Note : Just in case you might encoubter an error as shown in the screenshot below, type the following command to resolve.
 ```
-pip3 install --upgrade setuptools
+pip3 install --upgrade setuptools #needed only if you encouter the error shown in the screenshot below
 ```
 ![](./screenshots/setuptools.JPG)
 
