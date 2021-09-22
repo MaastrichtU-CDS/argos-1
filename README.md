@@ -82,4 +82,19 @@ You will need a deep learning machine where you can hold images until needed for
   
 </details>
 
+When you have your GPU machine ready, please reach out to Leonard ASAP and try to run the stand-alone GPU-only test; we will provide you with the complete test package including open access test images.
+
+### D : Installing the VANTAGE node client for federated learning
+For more detailed understanding of the Vantage6 infrastructure please refer to their documentation located [here](https://vantage6.ai/). This section provides instructions for installing the pre-requisites and setting up the infrastructure on your local machine.
+
+##### Install Python Virtual environment 
+Installing a python virtual environment is highly recommended (but not mandatory). You may use the commands below in your Python command line console to install, create and then activate a virtual enviroment named "vantage6" (you are welcome to name it anything you wish e.g. "argos01" etc. etc.)
+
+ ```
+    sudo apt install python3-venv
+    python3 -m venv vantage6
+    source vantage6/bin/activate
+``` 
+
+
 
