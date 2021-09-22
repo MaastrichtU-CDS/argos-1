@@ -87,7 +87,7 @@ When you have your GPU machine ready, please reach out to Leonard ASAP and try t
 ### D : Installing the VANTAGE node client for federated learning
 For more detailed understanding of the Vantage6 infrastructure please refer to their documentation located [here](https://vantage6.ai/). This section provides instructions for installing the pre-requisites and setting up the infrastructure on your local machine.
 
-Important note : You must set up the node client for federated learning on your UBUNTU GPU machine.
+***Important note : You must set up the node client for federated learning on your UBUNTU GPU machine.***
 
 <details><summary>Expand step-by-step instructions :</summary>
 
