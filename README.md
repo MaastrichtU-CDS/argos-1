@@ -119,3 +119,30 @@ Please note : If you wish to download only the vantage6-requirements.txt file, t
 Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact Leonard ASAP to complete this step.
 </details>
 
+### E : Connecting to the Medical Dataworks Infrastructure
+You will be able to execute these next steps after installing the node client and signing the documents with Medical Data Works.
+
+<details><summary>Expand step-by-step instructions :</summary>
+Step 7 : At this point, we are ready to setup a new node. At the terminal where you installed the Vantage node client now type ```vnode new``` and follow the given instructions. For setting up the node, you will require specific information from the server provider. The new node procedure will ask you for a **base url of server** and an **api_key** to authenticate with the server.
+  * The base URL of the server you need to enter is this :
+  * The API key is given to you directly by private email addressed specifically to you :
+
+
+On successful completion, a configuration file(.yaml) will be created. This configuration file holds the key information necessary for all further communication between the node and the server. 
+
+Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by using the ```nano``` command. The public IP address that you now need to enter for the aggregation point is :
+``` 
+    vnode files
+    nano [/path/to/yourconfigurationFile.yaml]
+ ```
+
+
+Step 9 : Creating and uploading a public/private key. A final step before the node can connect to the server is to generate a public/private key pair and log it with the server. To do this, run the following command (make sure to select the correct configuration name that you created in the previous steps):
+``` vnode create-private-key ```
+
+This procedure is going to ask for a username and password for creating and uploading a public/private key pair; this info shall be provided to you beforehand by direct email addressed to you.
+
+Step 10 : Starting the node. You are now ready to start the node type at the terminal :
+``` vnode start --image harbor2.vantage6.ai/infrastructure/maastro-node --attach ```
+The Vantage node should now be up and waiting to receive tasks from the central server. You can capture a few screenshots of the above steps for us and send it to Len, if you would like us to check that everything went well.
+</details>
