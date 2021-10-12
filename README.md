@@ -142,7 +142,7 @@ Step 8 : Additional environment variables in the configuration file. Add the fol
  ```
 
 
-Step 9 : Creating and uploading a public/private key. A final step before the node can connect to the server is to generate a public/private key pair and log it with the server. To do this, run the following command (make sure to select the correct configuration name that you created in the previous steps) ``` vnode create-private-key ```
+Step 9 : Creating and uploading a public/private key. A final step before the node can connect to the server is to generate a public/private key pair and log it with the server. To do this, run the command ``` vnode create-private-key ``` (make sure to select the correct configuration name that you created in the previous steps).
 
 This procedure is going to ask for a username and password for creating and uploading a public/private key pair; this info shall be provided to you beforehand by direct email addressed to you.
 
