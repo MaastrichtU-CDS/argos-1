@@ -125,14 +125,17 @@ You will be able to execute these next steps after installing the node client an
 <details><summary>Expand step-by-step instructions :</summary>
 
 Step 7 : At this point, we are ready to setup a new node. At the terminal where you installed the Vantage node client now type ```vnode new``` and follow the given instructions. For setting up the node, you will require specific information from the server provider. The new node procedure will ask you for a **base url of server** and an **api_key** to authenticate with the server.
-  * The base URL of the server you need to enter is this
-  * The API key is given to you directly by private email addressed specifically to you
+  * The base URL of the server you need to enter is exactly this **https://mdw-vantage6-argos.azurewebsites.net/**
+  * Port to which the server listens is **5000**
+  * The API key will be given to you directly by private email addressed specifically to you.
+  * You may leave the default database path empty for the moment.
+  * Default settings are fine for the rest of the options.
 
 
 On successful completion, a configuration file(.yaml) will be created. This configuration file holds the key information necessary for all further communication between the node and the server. 
 
 
-Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by using the ```nano``` command. The public IP address that you now need to enter for the aggregation point.
+Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip:'20.93.147.169'*** (please note the single quotation marks).
 ``` 
     vnode files
     nano [/path/to/yourconfigurationFile.yaml]
