@@ -132,7 +132,7 @@ Step 7 : At this point, we are ready to setup a new node. At the terminal where 
   * Default settings are fine for the rest of the options.
 
 
-On successful completion, a configuration file(.yaml) will be created. This configuration file holds the key information necessary for all further communication between the node and the server. 
+On successful completion, a configuration file (.yaml) will be created. This configuration file holds the key information necessary for all further communication between the node and the server. 
 
 
 Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip:'20.93.147.169'*** (please note the single quotation marks).
@@ -151,5 +151,5 @@ Step 10 : Starting the node. You are now ready to start the node type at the ter
 
 ``` vnode start --image harbor2.vantage6.ai/infrastructure/maastro-node --attach ```
 
-The Vantage node should now be up and waiting to receive tasks from the central server. You can capture a few screenshots of the above steps for us and send it to Len, if you would like us to check that everything went well.
+The Vantage node should now be up and waiting to receive tasks from the central server. You can capture a few screenshots of the above steps for us and send it to me (Len) or if you would like us to check that everything went well.
 </details>
