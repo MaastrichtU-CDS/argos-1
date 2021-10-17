@@ -158,4 +158,13 @@ To now complete the seeting up of your Vantage6 node client using the configurat
 ```vnode start --image harbor2.vantage6.ai/infrastructure/maastro-node --attach```
 
 The Vantage node should now be up and waiting to receive tasks from the central server. You can capture a few screenshots of the above steps for us and send it to me (Len) or if you would like us to check that everything went well.
+
+***note : in some cases the docker commands and vnode start may throw an message about being unable to start the docker.*** If this occurs, you need to try the following before trying Step 10 once again :
+
+```
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+su -s ${USER}
+```
+
 </details>
