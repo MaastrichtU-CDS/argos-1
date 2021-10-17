@@ -125,14 +125,16 @@ You will be able to execute these next steps after installing the node client an
 <details><summary>Expand step-by-step instructions :</summary>
 
 Step 7 : At this point, we are ready to setup a new node. At the terminal where you installed the Vantage node client now type ```vnode new``` and follow the given instructions. For setting up the node, you will require specific information from the server provider. The new node procedure will ask you for a **base url of server** and an **api_key** to authenticate with the server.
-  * The base URL of the server you need to enter is exactly this **https://mdw-vantage6-argos.azurewebsites.net/**
+  * The base URL of the server you need to enter is exactly this **https://mdw-vantage6-argos.azurewebsites.net**
   * Port to which the server listens is **443**
   * The API key will be given to you directly by private email addressed specifically to you.
   * You may leave the default database path empty for the moment.
   * Default settings are fine for the rest of the options.
 
 
-On successful completion, a configuration file (.yaml) will be created. This configuration file holds the key information necessary for all further communication between the node and the server. 
+On successful completion, a configuration file (.yaml) will be created. This configuration file holds the key information necessary for all further communication between the node and the server.
+
+
 
 
 Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip:'20.93.147.169'*** (please note the single quotation marks).
@@ -147,9 +149,13 @@ Step 9 : Creating and uploading a public/private key. A final step before the no
 This procedure is going to ask for a username and password for creating and uploading a public/private key pair; this info shall be provided to you beforehand by direct email addressed to you.
 
 
-Step 10 : Starting the node. You are now ready to start the node type at the terminal :
+Step 10 : Starting the node. To explicitly pull the node client for ARGOS, you can enter into the command line :
 
-``` vnode start --image harbor2.vantage6.ai/infrastructure/maastro-node --attach ```
+```docker pull harbor2.vantage6.ai/infrastructure/maastro-node```
+
+To now complete the seeting up of your Vantage6 node client using the configuration file you set up previously, you can start the node and attach the node client which you just pulled from docker :
+
+```vnode start --image harbor2.vantage6.ai/infrastructure/maastro-node --attach```
 
 The Vantage node should now be up and waiting to receive tasks from the central server. You can capture a few screenshots of the above steps for us and send it to me (Len) or if you would like us to check that everything went well.
 </details>
