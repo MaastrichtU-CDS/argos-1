@@ -148,6 +148,12 @@ Step 9 : Creating and uploading a public/private key. A final step before the no
 
 This procedure is going to ask for a username and password for creating and uploading a public/private key pair; this info shall be provided to you beforehand by direct email addressed to you.
 
+***note : in some cases the vantage application may throw an message about a missing.*** If this occurs, you need to try to create the folder and then try Step 9 once again :
+
+```
+    mkdir -p [/path/to/data_folder]
+```
+
 
 Step 10 : Starting the node. To explicitly pull the node client for ARGOS, you can enter into the command line :
 
