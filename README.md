@@ -162,9 +162,9 @@ The Vantage node should now be up and waiting to receive tasks from the central 
 ***note : in some cases the docker commands and vnode start may throw an message about being unable to start the docker.*** If this occurs, you need to try the following before trying Step 10 once again :
 
 ```
-sudo groupadd docker
-sudo usermod -aG docker ${USER}
-su -s ${USER}
+    sudo groupadd docker
+    sudo usermod -aG docker ${USER}
+    su -s ${USER}
 ```
 
 </details>
