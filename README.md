@@ -137,7 +137,7 @@ On successful completion, a configuration file (.yaml) will be created. This con
 
 
 
-Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip:'20.93.147.169'*** (please note the single quotation marks).
+Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip: '20.93.147.169'*** (please note the single quotation marks).
 ``` 
     vnode files
     nano [/path/to/yourconfigurationFile.yaml]
