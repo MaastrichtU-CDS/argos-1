@@ -170,7 +170,7 @@ The Vantage node should now be up and waiting to receive tasks from the central 
 ```
     sudo groupadd docker
     sudo usermod -aG docker ${USER}
-    su -s ${USER}
+    su ${USER}
 ```
 
 </details>
