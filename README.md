@@ -128,7 +128,7 @@ Step 7 : At this point, we are ready to setup a new node. At the terminal where 
   * The base URL of the server you need to enter is exactly this **https://mdw-vantage6-argos.azurewebsites.net**
   * Port to which the server listens is **443**
   * The API key will be given to you directly by private email addressed specifically to you.
-  * You may leave the default database path empty for the moment.
+  * Please make ```'database.csv'``` the database path for this moment, even though such a file does not actually exist anywhere.
   * Default settings are fine for the rest of the options.
 
 
@@ -137,7 +137,7 @@ On successful completion, a configuration file (.yaml) will be created. This con
 
 
 
-Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip: '20.93.147.169'*** (please note the single quotation marks).
+Step 8 : Additional environment variables in the configuration file. Add the following environment variables in the configuration file by editing the configuration file using the ```nano``` command. The public IP address that you now need to enter for the aggregation point, that is, make sure the line reads as ***public_ip: 20.93.147.169*** (please note the single space after the colon symbol).
 ``` 
     vnode files
     nano [/path/to/yourconfigurationFile.yaml]
