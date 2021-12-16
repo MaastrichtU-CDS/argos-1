@@ -62,7 +62,7 @@ _This is probably one of the options for partners that want to move clinical dat
 Step 4 : First try a testrun with a dummy case (eg delineated RANDO phantom, or use one of our public access cases from The Cancer Imaging Archive) e.g. LUNG-001 included in this repository. This is to make sure the transfer into XNAT is going as expected. Try downloading this dummy case back from XNAT and open it with your Dicom tools; check if it compares well to the original (must be same other than patient de-identification and GTV renaming). An example of one of my cases in XNAT is in the screenshot below, you see this one has multiple CT slices and one single SEG (or RTSTRUCT if this is your case) assigned to this patient.
 ![](./screenshots/xnat-dicom-ct-seg.png)
 
-Step 5: Instructions for converting RTSTRUCT to SEGMENTATION following shortly .....
+Step 5: Instructions for converting RTSTRUCT to NRRD will follow .....
 </details>
 
 
