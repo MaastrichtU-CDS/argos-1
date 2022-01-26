@@ -141,6 +141,7 @@ Step 8 : Additional environment variables in the configuration file. Add the fol
 ``` 
     vnode files
     nano [/path/to/yourconfigurationFile.yaml]
+    touch [/data/base/path/database.csv]
  ```
 
 
