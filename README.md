@@ -175,3 +175,14 @@ The Vantage node should now be up and waiting to receive tasks from the central 
 ```
 
 </details>
+
+### Cleaning up Vantage6 ARGOS environment
+
+The node is sometimes stuck and running with dangling images. In order to do a clean up and restart the node follow the instructions below 
+
+1. Stop the running node   ``` vnode stop ```
+2. Kill running docker containers   ``` docker kill $(docker ps -q --filter ancestor=ananyac* ) ```
+3. Remove any duplicate docker network   ``` docker network prune ```
+4. Start the vnode ``` vnode start --image harbor2.vantage6.ai/infrastructure/maastro-node --attach ```
+5. Additionally, if the machine runs out of space , clean up some redundant docker images ``` docker rmi $(docker ps -q --filter ancestor=ananyac* ) ```
+
