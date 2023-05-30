@@ -1,0 +1,25 @@
+INFO:radiomics.batch: pyradiomics version: 0+unknown
+INFO:radiomics.batch: Reading Params file for pyradiomics
+INFO:radiomics.batch: Parsing DICOM files and RTSTRUCT in working directory
+INFO:radiomics.batch: DICOM and RTSTRUCT Parsing Done
+INFO:radiomics.batch: Starting Pyrex
+INFO:radiomics.batch: Loading RTSTRUCT: ./StructFolder
+INFO:radiomics.batch: ROI: ['GTV-1']
+INFO:radiomics.batch: Processing Radiomics on GTV-1 of Patient (LUNG1-002)
+INFO:radiomics.featureextractor: Loading parameter file /home/jovyan/work/ParamsSettings/Pyradiomics_Params.yaml
+INFO:radiomics.featureextractor: Calculating features with label: 1
+INFO:radiomics.featureextractor: Loading image and mask
+INFO:radiomics.imageoperations: Applying resampling from spacing [0.977 0.977 3.   ] and size [512 512 111] to spacing [2. 2. 2.] and size [71, 70, 61]
+INFO:radiomics.featureextractor: Computing shape
+INFO:radiomics.featureextractor: Adding image type "Original" with custom settings: {'binWidth': 25}
+INFO:radiomics.featureextractor: Calculating features for original image
+INFO:radiomics.featureextractor: Computing firstorder
+INFO:radiomics.featureextractor: Computing glcm
+INFO:radiomics.featureextractor: Computing glrlm
+INFO:radiomics.featureextractor: Computing glszm
+INFO:radiomics.featureextractor: Computing gldm
+INFO:radiomics.featureextractor: Computing ngtdm
+INFO:radiomics.batch: -------------------------------------------
+INFO:radiomics.batch: Extraction complete, writing CSV
+INFO:radiomics.batch: CSV writing complete
+INFO:radiomics.batch: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
