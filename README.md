@@ -15,9 +15,9 @@ Step 3 : After validating that Docker is working (e.g. do the hello-world demo r
 
 Step 4 : Install the git library with `sudo apt-get install git`.
 
-Step 5 : Find the XNAT docker-compose registry by the Washington University Neuro-imaging Research Group, and follow the instructions to clone their repository to your system, starting with the `git clone https://github.com/NrgXnat/xnat-docker-compose`.
+Step 5 : Download and unzip the XNAT docker-compose-master from this repository. It contains the latest version of XNAT from the Washington University Neuro-imaging Research Group, and adds some python tools for image data pre-processing, namely it uses plastimatch and some pyradiomics tools.
 
-Step 6 : Create an XNAT instance by switching directory into the xnat-docker-compose master folder `cd xnat-docker-compose` and then copy the default environment template to the .env file as `sudo cp default.env .env`.
+Step 6 : Go into your xnat-docker-compose master folder `cd xnat-docker-compose-master`.
 
 Step 7 : Spin up the required XNAT components using docker-compose as follows `sudo docker-compose up -d`.
 
@@ -34,7 +34,7 @@ _The objective of this part is to get a populate your XNAT docker instance with 
 Step 1 : On the XNAT welcome screen, you will log in as _admin_ and the password is _admin_.
 ![](./screenshots/xnat_splash_admin.jpg)
 
-Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02". This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
+Step 2 : Create a new project, for instance, I am calling mine "ARGOSnode02" as you see in the screenshot. This name is only visible on your side, no one else needs this, so feel free to label your collection as you wish.
 ![](./screenshots/xnat-new-projecr.png)
 
 Step 3 : There are now several options to populate the XNAT collection with your DICOM CT and DICOM RTSTRUCT (for most partners) or DICOM SEGMENTATION (for the minority of partners). We will provide you some of the data transfer options below.
