@@ -1,6 +1,6 @@
 # ARtificial Intelligence for Gross tumour vOlume Segmentation (ARGOS)
 
-## ARGOS Standard Procedures (growing document - works in progress)
+## ARGOS Standard Setup Procedures
 
 ### A : Setting up an ARGOS XNAT dicom collection for your clinic
 _The objective of this part is to get a working XNAT docker instance set up locally on your clinic side, and prepare it to receive DICOM data_
@@ -82,7 +82,7 @@ You will need a deep learning machine where you can hold images until needed for
   
 </details>
 
-When you have your GPU machine ready, please reach out to Leonard ASAP and try to run the stand-alone GPU-only test; we will provide you with the complete test package including open access test images.
+When you have your GPU machine ready, please reach out to me ASAP and try to run the stand-alone GPU-only test; we will provide you with the complete test package including open access test images.
 
 ### D : Installing the VANTAGE node client for federated learning
 For more detailed understanding of the Vantage6 infrastructure please refer to their documentation located [here](https://vantage6.ai/). This section provides instructions for installing the pre-requisites and setting up the infrastructure on your local machine.
@@ -116,7 +116,7 @@ cat argos-1/vantage6-requirements.txt | xargs -n 1 -L 1 pip3 install
 ```
 Please note : If you wish to download only the vantage6-requirements.txt file, then you have to change the path immediately in front of the "cat" command above to where you had saved the vantage6-requirements.txt file.
 
-Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact Leonard ASAP to complete this step.
+Step 6 : At this point, you are ready to configure your node client. For this you will need some information and a couple of online support steps from Medical Data Works, such as an API private key and port numbers/IP addresses etc. Please contact me ASAP to complete this step.
 </details>
 
 ### E : Connecting to the Medical Dataworks Infrastructure
